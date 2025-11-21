@@ -1,3 +1,4 @@
+using System;
 using NUnit.Framework;
 using TMPro;
 using UnityEngine;
@@ -29,15 +30,14 @@ void Start()
     bugAmountText = GameObject.Find("BugText");
     
     AddBuggs(0);
+    
+    
 }
 
-public void StartFake()
+void Update()
 {
-
-    bugAmountText = GameObject.Find("BugText");
-
-    AddBuggs(0);
     
+
     
 }
 
