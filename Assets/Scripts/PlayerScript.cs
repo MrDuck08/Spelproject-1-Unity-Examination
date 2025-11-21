@@ -129,6 +129,13 @@ float xInput;
          sceneLoader.ReloadScene();
 
      }
+     
+     if(collision.tag == "GoldenBug")
+     {
+
+         sceneLoader.ChangeScene(1);
+
+     }
 
      // if(collision.tag == "Dialogue")
      // {
