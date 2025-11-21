@@ -23,6 +23,7 @@ float xInput;
  GameManager gameManager;
  // DialogueScript dialogueScript;
  AudioManager audioManager;
+ SceneLoader sceneLoader;
 
  // Start is called once before the first execution of Update after the MonoBehaviour is created
  void Start()
@@ -30,6 +31,7 @@ float xInput;
      myRigidbody2D = GetComponent<Rigidbody2D>();   
      myAnimator = GetComponentInChildren<Animator>();
 
+     sceneLoader = FindObjectOfType<SceneLoader>();
      gameManager = FindObjectOfType<GameManager>();
      // dialogueScript = FindObjectOfType<DialogueScript>();
      audioManager = FindObjectOfType<AudioManager>();
@@ -124,7 +126,7 @@ float xInput;
      if(collision.tag == "EnemyAttack")
      {
 
-         Destroy(gameObject);
+         sceneLoader.ReloadScene();
 
      }
 
