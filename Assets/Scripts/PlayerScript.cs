@@ -133,7 +133,7 @@ float xInput;
      if(collision.tag == "GoldenBug")
      {
 
-         sceneLoader.ChangeScene(1);
+         sceneLoader.ChangeScene(3);
 
      }
 
