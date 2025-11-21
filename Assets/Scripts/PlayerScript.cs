@@ -28,7 +28,7 @@ float xInput;
  void Start()
  {
      myRigidbody2D = GetComponent<Rigidbody2D>();   
-     myAnimator = GetComponent<Animator>();
+     myAnimator = GetComponentInChildren<Animator>();
 
      gameManager = FindObjectOfType<GameManager>();
      // dialogueScript = FindObjectOfType<DialogueScript>();
