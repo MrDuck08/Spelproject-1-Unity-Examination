@@ -128,8 +128,9 @@ public class Enemy : MonoBehaviour
      
 
      Vector2 projectileSpawnPosition = (Vector2)transform.position + new Vector2(projectileSpawnOffset.x * horizontalDirection, projectileSpawnOffset.y);
-     GameObject newProjectile = Instantiate(projectile, projectileSpawnPosition, Quaternion.identity);
-     newProjectile.transform.localScale = transform.localScale;
+     GameObject newProjectile = Instantiate(projectile);
+     newProjectile.transform.position = projectileSpawnPosition;
+     newProjectile.GetComponent<EnemyBullet>().GiveDirektion(-horizontalDirection);
      
  }
 
