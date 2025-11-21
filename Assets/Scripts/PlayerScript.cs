@@ -121,10 +121,10 @@ float xInput;
 
      }
      
-     if(collision.tag == "BugEnjoyerDoor")
+     if(collision.tag == "EnemyAttack")
      {
 
-         gameManager.CheckIfWin(false);
+         Destroy(gameObject);
 
      }
 
