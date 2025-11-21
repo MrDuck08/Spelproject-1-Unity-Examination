@@ -128,7 +128,7 @@ float xInput;
 
          sceneLoader.ReloadScene();
 
-     }
+     }  
      
      if(collision.tag == "GoldenBug")
      {
