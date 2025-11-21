@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Bugg
   - EnemyAttack
+  - Void
   layers:
   - Default
   - TransparentFX

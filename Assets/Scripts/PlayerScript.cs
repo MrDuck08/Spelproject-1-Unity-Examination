@@ -123,7 +123,7 @@ float xInput;
 
      }
      
-     if(collision.tag == "EnemyAttack")
+     if(collision.tag == "EnemyAttack" || collision.tag == "Void")
      {
 
          sceneLoader.ReloadScene();
