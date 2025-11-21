@@ -21,6 +21,9 @@ public float volume = 1;
 // DialogueScript dialogueScript;
 SceneLoader sceneLoader;
 
+private float timer = 40;
+[SerializeField] private TextMeshProUGUI timerText;
+
 
 // Start is called once before the first execution of Update after the MonoBehaviour is created
 void Start()
@@ -37,7 +40,18 @@ void Start()
 void Update()
 {
     
+timer -= Time.deltaTime;
 
+String WhatTimeText = timer.ToString("0") + " s LEFT!!!";
+
+timerText.text = WhatTimeText;
+
+if (timer < 0)
+{
+    
+    sceneLoader.ReloadScene();
+    
+}
     
 }
 
